@@ -8,13 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "pwa-msedge",
-            "request": "launch",
-            "name": "Launch Edge against localhost",
+            "runtimeExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         },
@@ -22,6 +16,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html directly",
+            "runtimeExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
             "file": "${workspaceFolder}/index.html"
         }
     ]

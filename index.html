@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haberler - Çanakkale Psikoteknik</title>
+    <title>Çanakkale Psikoteknik</title>
+    <link rel="icon" href="logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> 0505 035 97 01</span>
+                <span><i class="fas fa-envelope"></i> ardpsikoteknik17@gmail.com</span>
+                <span><i class="far fa-clock"></i> 08:00 - 18:00</span>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
 
     <!-- Header Section -->
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#">Çanakkale Psikoteknik</a>
+                <a href="index.html">
+                    <img src="logo.svg" alt="ARD Psikoteknik Logo" class="logo-img">
+                </a>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="index.html" class="active">Anasayfa</a></li>
                     <li><a href="#">Kurumsal</a></li>
                     <li><a href="#">Hizmetlerimiz</a></li>
-                    <li><a href="#" class="active">Haberler</a></li>
+                    <li><a href="#">Belgelerimiz</a></li>
                     <li><a href="#">İletişim</a></li>
                 </ul>
                 <div class="burger">
@@ -33,79 +54,72 @@
         </div>
     </header>
 
-    <!-- Page Title -->
-    <section class="page-title">
-        <div class="container">
-            <h1>Haberler</h1>
-            <p>Sektörel gelişmeler ve güncel haberler</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Çanakkale Psikoteknik Değerlendirme Merkezi</h1>
+            <p>Güvenli sürüş ve profesyonel hizmet için doğru adres.</p>
+            <a href="#" class="btn-primary">Randevu Al</a>
         </div>
     </section>
 
-    <!-- News Grid Section -->
-    <section class="news-section">
+    <!-- About Section -->
+    <section class="about-section">
         <div class="container">
-            <div class="news-grid">
-                <!-- Article 1 -->
-                <article class="news-card">
-                    <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="İnşaat Sektörü">
-                    </div>
-                    <div class="news-content">
-                        <span class="date"><i class="far fa-calendar-alt"></i> 17 Mart 2024</span>
-                        <h3><a href="#">İnşaat Sektörü ve Getirileri</a></h3>
-                        <p>İnşaat sektörü son yıllarda büyük bir ivme kazandı. Peki bu gelişim neler getiriyor?</p>
-                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <!-- Article 2 -->
-                <article class="news-card">
-                    <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="İş Dünyası">
-                    </div>
-                    <div class="news-content">
-                        <span class="date"><i class="far fa-calendar-alt"></i> 15 Mart 2024</span>
-                        <h3><a href="#">İş Dünyasındaki Büyük Farklar</a></h3>
-                        <p>Rekabetin arttığı iş dünyasında fark yaratmak için neler yapılmalı?</p>
-                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <!-- Article 3 -->
-                <article class="news-card">
-                    <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Teknoloji">
-                    </div>
-                    <div class="news-content">
-                        <span class="date"><i class="far fa-calendar-alt"></i> 12 Mart 2024</span>
-                        <h3><a href="#">Lokomotif Sektöründeki Gözle Görülür Artış!</a></h3>
-                        <p>Ekonominin lokomotifi olan sektörlerdeki son durum ve gelecek tahminleri.</p>
-                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <!-- Article 4 -->
-                <article class="news-card">
-                    <div class="news-image">
-                        <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gelişmeler">
-                    </div>
-                    <div class="news-content">
-                        <span class="date"><i class="far fa-calendar-alt"></i> 10 Mart 2024</span>
-                        <h3><a href="#">En Son Gelişmeler</a></h3>
-                        <p>Sektördeki en son gelişmeleri ve yenilikleri sizin için derledik.</p>
-                        <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
+            <div class="about-content">
+                <h2>Psikoteknik Değerlendirme Nedir?</h2>
+                <p>Psikoteknik değerlendirme, sürücülerin dikkat, algı, refleks, hafıza, muhakeme gibi zihinsel ve
+                    psikomotor becerilerinin bilgisayarlı testlerle ölçüldüğü bir değerlendirme sürecidir. Ticari araç
+                    kullanan sürücüler için yasal bir zorunluluktur.</p>
+                <a href="#" class="btn-secondary">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Psikoteknik Testi">
             </div>
         </div>
     </section>
-    
-    <!-- Info Banner -->
-    <section class="info-banner">
+
+    <!-- Services Section -->
+    <section class="services-section">
         <div class="container">
-            <div class="banner-content">
-                <h2>Hizmetlerimiz hakkında daha detaylı bilgi almak için</h2>
-                <a href="#" class="btn-primary">Hemen Arayın! <i class="fas fa-phone"></i></a>
+            <div class="section-title">
+                <h2>HİZMETLERİMİZ</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Psikoteknik Belgesi</h3>
+                    <p>Ticari araç kullanıcıları için zorunlu psikoteknik değerlendirme raporu hizmeti.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Psikiyatri Onayı</h3>
+                    <p>Test sonrası psikiyatri muayenesi ve rapor onay süreci takibi.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Kurumsal Çözümler</h3>
+                    <p>Şirketlere ve filolara özel toplu psikoteknik değerlendirme hizmetleri.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-archive"></i>
+                    <h3>Rapor Takibi</h3>
+                    <p>Raporlarınızın e-devlet sistemine işlenmesi ve arşivlenmesi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Info Banner -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Hizmetlerimiz hakkında detaylı bilgi almak için</h2>
+            <div class="cta-buttons">
+                <a href="tel:05050359701" class="btn-light"><i class="fas fa-phone"></i> Hemen Arayın</a>
+                <a href="#" class="btn-outline-light">Bilgi Formu</a>
             </div>
         </div>
     </section>
@@ -113,35 +127,43 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-col">
-                    <h3>Çanakkale Psikoteknik</h3>
-                    <p>Güvenli sürüş ve psikoteknik değerlendirme hizmetlerinde öncü kuruluş.</p>
+                    <img src="logo.png" alt="ARD Psikoteknik Logo" class="footer-logo">
+                    <p>Çanakkale'nin güvenilir psikoteknik değerlendirme merkezi. Sürücülerin güvenliği önceliğimizdir.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h3>Hızlı Erişim</h3>
                     <ul>
                         <li><a href="#">Anasayfa</a></li>
-                        <li><a href="#">Hakkımızda</a></li>
-                        <li><a href="#">Hizmetler</a></li>
+                        <li><a href="#">Kurumsal</a></li>
+                        <li><a href="#">Hizmetlerimiz</a></li>
                         <li><a href="#">İletişim</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>İletişim</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Çanakkale, Merkez</li>
-                        <li><i class="fas fa-phone"></i> +90 555 555 55 55</li>
-                        <li><i class="fas fa-envelope"></i> info@canakkalepsikoteknik.com</li>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> İsmetpaşa Mh. Aynalı Çeşme Sk. Gürel Apt. No:8/4
+                            ÇANAKKALE</li>
+                        <li><i class="fas fa-phone"></i> 0505 035 97 01</li>
+                        <li><i class="fas fa-envelope"></i> ardpsikoteknik17@gmail.com</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Çanakkale Psikoteknik. Tüm hakları saklıdır.</p>
+                <p>&copy; 2024 ARD Psikoteknik. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
