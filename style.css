@@ -191,6 +191,180 @@ header .container {
     background-color: var(--white);
 }
 
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    color: var(--white);
+    padding: 15px 26px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    backdrop-filter: blur(6px);
+}
+
+.btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-trust {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    opacity: 0.95;
+}
+
+.trust-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.trust-item i {
+    color: var(--secondary-color);
+}
+
+/* Quick Appointment */
+.quick-appointment {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%);
+}
+
+.qa-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.qa-copy h2 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+}
+
+.qa-copy p {
+    color: #586069;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.qa-points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+    color: #4a5568;
+}
+
+.qa-points i {
+    color: #27ae60;
+    margin-top: 4px;
+}
+
+.qa-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+    padding: 24px;
+}
+
+.qa-form .form-row {
+    margin-bottom: 14px;
+}
+
+.qa-form label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.qa-form input {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(44, 62, 80, 0.18);
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qa-form input:focus {
+    border-color: rgba(231, 76, 60, 0.7);
+    box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.12);
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+.form-note {
+    margin-top: 10px;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* Mobile Sticky Actions */
+.sticky-actions {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    display: none;
+    background: rgba(255, 255, 255, 0.92);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.sticky-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 6px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.sticky-action i {
+    font-size: 1.25rem;
+}
+
+.sticky-action:nth-child(2) i {
+    color: #25D366;
+}
+
+.sticky-action:hover {
+    color: var(--secondary-color);
+}
+
 /* About Section */
 .about-section {
     padding: 80px 0;
@@ -520,6 +694,19 @@ footer {
 
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .qa-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .sticky-actions {
+        display: flex;
+    }
+
+    body {
+        padding-bottom: 74px;
     }
 
     .about-section .container {
